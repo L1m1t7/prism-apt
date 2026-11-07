@@ -1,0 +1,5 @@
+Types: deb
+URIs: https://l1m1t7.github.io/prism-apt/
+Suites: resolute
+Components: main
+Signed-By: /usr/share/keyrings/prism-archive-keyring.gpg

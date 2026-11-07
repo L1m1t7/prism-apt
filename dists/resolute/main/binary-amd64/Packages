@@ -1,0 +1,107 @@
+Package: fonts-geist
+Architecture: all
+Version: 0.7.1
+Multi-Arch: foreign
+Priority: optional
+Section: fonts
+Source: prism
+Maintainer: eemel <l1m1tz19500@gmail.com>
+Installed-Size: 699
+Filename: pool/main/fonts-geist_0.7.1_all.deb
+Size: 288280
+MD5sum: b168c25c15343898b235bc77ab1f7d24
+SHA1: 28d1fb3df3ef21f76af6bd94a331f9fcf78a057f
+SHA256: 66737d8d2faf49e98537a0fb5b06fea0f600d41c69d5d37055785d7ddf3c2962
+SHA512: 28e55b6f37b92c888117cb2c8a215061165f21df47f56e13bb8ccff9f9ed48abb87768ae7b2717a104835437db143196cc09362bb5683849da309656abc28afb
+Description: Geist and Geist Mono typefaces
+ Geist is a sans-serif typeface and Geist Mono its monospaced companion,
+ made by Vercel and released under the SIL Open Font License. Variable
+ fonts with weights 100 to 900, upright and italic. Prism uses them as
+ its system fonts.
+
+Package: heroic
+Architecture: amd64
+Version: 2.22.4
+Priority: optional
+Section: default
+Maintainer: Heroic Games Launcher <heroicgameslauncher@protonmail.com>
+Installed-Size: 378096
+Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
+Recommends: libappindicator3-1
+Filename: pool/main/heroic_amd64.deb
+Size: 127567920
+MD5sum: 34078146f887c78d194d9531dc1d57da
+SHA1: 7c6566fe93d5e6d09640bb0b3c06760aa6e9ea16
+SHA256: 46aa36778f16d98a86823fc42fcb7ef47efab346ff19380165201aa373ebf70a
+SHA512: 2419fa8fe96b3d200952feebd026862e07422d8987cc64feab0ba3d970a207daad0d94620f4755414e8344cc8186dbf3e977347690cce265dcebc0bf471e5ef8
+Homepage: https://./
+Description: 
+  An Open Source Launcher for GOG, Epic Games and Amazon Games
+License: GPL-3.0-only
+Vendor: Heroic Games Launcher <heroicgameslauncher@protonmail.com>
+
+Package: prism-desktop
+Architecture: all
+Version: 0.7.1
+Priority: optional
+Section: kde
+Source: prism
+Maintainer: eemel <l1m1tz19500@gmail.com>
+Installed-Size: 13
+Depends: prism-settings, prism-gaming, plasma-desktop
+Filename: pool/main/prism-desktop_0.7.1_all.deb
+Size: 4576
+MD5sum: 6485853b261f9ecc921fceaca12ca912
+SHA1: 151d6832a6f14383ce97fbd3d83aa4df48fa0720
+SHA256: 185db49d6274a242a9695e264800c76568bc3a23999cc9b1968be131bef846ed
+SHA512: f9b7ad3e1cb830fb044e37936621978ac3113ecb4a85a7911fa4c98062944456aaf617bdd238238cc062732687400d9f2ef1d321cc462ebda4f1165539c759e3
+Description: Prism desktop (metapackage)
+ Installs the full Prism desktop on top of Kubuntu.
+
+Package: prism-gaming
+Architecture: all
+Version: 0.7.1
+Priority: optional
+Section: kde
+Source: prism
+Maintainer: eemel <l1m1tz19500@gmail.com>
+Installed-Size: 22
+Depends: steam-installer, gamemode, mangohud, gamescope, flatpak, libglib2.0-bin
+Recommends: plasma-discover-backend-flatpak, heroic
+Filename: pool/main/prism-gaming_0.7.1_all.deb
+Size: 8830
+MD5sum: b6ae34388db818858407c2ced4c73fe9
+SHA1: dcdd99e3a6d952f0fbe131ae58d634d1720bd0bf
+SHA256: f40bf73c60646d9ea897ffb359b16b303c5f332047a0e9cf5cb3ca59ed5d25d7
+SHA512: 6abd57aa5417300145b0d650c5621dd9094ea72145eb7fd209ad48315f1ecae4d0c572249f57480b232350673113854b23d8d770becfbc1dcef536b4f8a7baf4
+Description: Prism gaming bundle (metapackage)
+ Steam, GameMode, MangoHud and Gamescope, Heroic (from the Prism Repo),
+ plus Flathub for ProtonPlus
+ (the Proton-GE manager). Also provides the game detection Prism's
+ Game Mode uses. Steam needs 32-bit packages: run
+ "dpkg --add-architecture i386" and "apt update" first.
+
+Package: prism-settings
+Architecture: all
+Version: 0.7.1
+Priority: optional
+Section: kde
+Source: prism
+Maintainer: eemel <l1m1tz19500@gmail.com>
+Installed-Size: 16481
+Depends: plasma-workspace (>= 4:6.6), kwin-wayland, fonts-geist
+Recommends: appmenu-gtk3-module
+Filename: pool/main/prism-settings_0.7.1_all.deb
+Size: 16573554
+MD5sum: 02484112183518c2418233342ac48def
+SHA1: 9c5f85a4fdd888e7e1b34725ea3bde02c161dd35
+SHA256: 015f8e08e944da01bdb7da86604b961741a7288a9a3d9f277581e1cbd4309cd7
+SHA512: ea3f46a19a81bc3e17b5c369fbf20b2f7137a67af1ce6560e417dd78ac70f2ca13e4aea4230406483d60488ca7ae2da407ecbfb723801641344330a4ca4c1e7a
+Description: Prism desktop defaults for KDE Plasma
+ Default settings for Prism: a macOS-style top bar and dock, a
+ Spotlight-style launcher on the Meta key, tuned window animations, and
+ the Prism look (glass bars and menus, colour scheme, Geist fonts,
+ silk-wave wallpapers), plus the Prism Dark Glass, Frost and Solid styles.
+ Only defaults are changed; settings a user has already made are kept.
+ Removing this package returns the desktop to the Kubuntu defaults.
+

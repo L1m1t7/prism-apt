@@ -1,0 +1,1 @@
+https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v2.22.4/Heroic-2.22.4-linux-amd64.deb 46aa36778f16d98a86823fc42fcb7ef47efab346ff19380165201aa373ebf70a pool/main/heroic_amd64.deb

@@ -1,0 +1,32 @@
+# Copied into L1m1t7/prism-apt by Prism's CI. Adds the mirrored packages
+# listed in mirror.txt (too big for git) and deploys the repo to Pages.
+name: Deploy Prism Repo
+on: [push, workflow_dispatch]
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: true
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch mirrored packages
+        run: |
+          while read -r url sha path; do
+            curl -fsSL -o "$path" "$url"
+            echo "$sha  $path" | sha256sum -c -
+          done < mirror.txt
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: deploy
+        uses: actions/deploy-pages@v4
+        with:
+          timeout: 1800000 # 30 min: the 128 MB Heroic .deb can outlast the default 10

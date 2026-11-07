@@ -1,0 +1,19 @@
+Architectures: amd64
+Codename: resolute
+Components: main
+Date: Sat, 07 Nov 2026 19:39:31 +0000
+Label: Prism
+Origin: Prism
+Suite: resolute
+MD5Sum:
+ 323eb379c4b9feaa86e3317bd06cadc1             4417 main/binary-amd64/Packages
+ 18a23c3c183a65b7a6217090a5257e4a             2186 main/binary-amd64/Packages.gz
+SHA1:
+ f5ee8e41107ea12af688444dd685494ad89c0b9a             4417 main/binary-amd64/Packages
+ ec016304409c49c878e786fc93e0e7d2d7ae0fba             2186 main/binary-amd64/Packages.gz
+SHA256:
+ da954ae03e98ee0a378a1745d6891c67c7305d57e2313daff1c1f931e57d1ba6             4417 main/binary-amd64/Packages
+ 23094fd117803ef685f9b78f7d6ae18aa5e15719abbabecaafbd9142c80cc9af             2186 main/binary-amd64/Packages.gz
+SHA512:
+ 7d66726b0ef6b3455493d1d4d954b5dc1bbd826d7a3ae3ef771c4a7e7ffa71b3a7d8c56476914c546c915fae3672c812aaa9f8cdaeeb0ec31b31528a70cbd7e4             4417 main/binary-amd64/Packages
+ 3ff63c86010bce99d745e80717379c0a6698cf6dbd2e77451df98bd230d7d2650e1c354a08cd943f1d5b7d20503197b23876bc1e72bd0972453ac9b65d1b0c19             2186 main/binary-amd64/Packages.gz
